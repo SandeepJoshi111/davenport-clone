@@ -60,7 +60,12 @@ body {
     font-family: 'Basic', sans-serif !important;
     text-transform: uppercase;
 }
-
+.btn-top{
+    border: 1px solid #fff;
+    color: white; 
+    padding: 2px;
+    border-radius: 5px;
+}
 .menu-item {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -183,7 +188,9 @@ body {
 .col-md-6 {
     padding: 0px 40px;
 }
-
+.col-md-8 {
+    margin-left: -20px;
+}
 .card {
     
     background-color: transparent;
@@ -201,8 +208,8 @@ position: relative; /* Ensure .card is relative for absolute positioning of the 
 
 .badge {
     position: absolute;
-    bottom: 5px; /* Position 5px from the bottom */
-    left: 5px; /* Position 5px from the left */
+    bottom: 15px; /* Position 5px from the bottom */
+    left: 15px; /* Position 5px from the left */
     border-radius: 30px;
     font-size: 10px;
     padding: 5px 10px;
@@ -222,7 +229,7 @@ position: relative; /* Ensure .card is relative for absolute positioning of the 
 }
 
 .card-text {
-    color: #737171;
+    color: #989797;
     font-family: "Basic", serif;
     margin-bottom: 0px;
     font-size: 14px;
@@ -231,7 +238,7 @@ position: relative; /* Ensure .card is relative for absolute positioning of the 
 
 }
 .card-text i{
-    margin-right: 5px;
+    margin-right: 3px;
 }
 
 .card-title {
@@ -250,4 +257,12 @@ position: relative; /* Ensure .card is relative for absolute positioning of the 
 .share-icons i {
     
     margin-left: 10px; /* Adjust this value to increase or decrease the gap */
+}
+
+.percent{
+    position: absolute;
+    right: 0;
+    background-color: #8a44e5;
+    padding: 15px;
+    border-top-right-radius: 5px;
 }
