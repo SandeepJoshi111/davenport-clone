@@ -7,50 +7,89 @@
     <title>Davenport</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
     <!-- Top Bar -->
     <div class="header-topline-wrapper">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div>
-                <i class="fa-regular fa-calendar"></i>Thursday, 23 May 2024
-            </div>
-            <strong>TRENDING</strong>
-            <div>
-                <span>5 Random Colours That Are About to Be Everywhere</span>
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-4 d-flex align-items-center">
+                    <div class="header-topline-date">
+                        <i class="bi bi-calendar"></i> Thursday, 23 May 2024
+                    </div>
+                    <div class="header-topline-title">
+                        Trending
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a class="d-block w-100" href="#">
+                                    5 Random Colours That Are About to Be Everywhere
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a class="d-block w-100" href="#">
+                                    Everything you need to know about the V&A's Tim Walker exhibition
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="header-menu">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div>
-                <a href="#" class="text-light">Blocks</a>
-                <a href="#" class="text-light">Team</a>
-                <a href="#" class="text-light">Advert</a>
-            </div>
-            <div>
-                <a href="#" class="text-light">Subscribe</a>
-                <a href="#" class="text-light">Purchase Theme</a>
+
+    <div class="header-menu ">
+        <div class="container ">
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-md-12 ">
+                    <div class="menu-item">
+                        <a href="#" class="text-light">Blocks</a>
+                        <a href="#" class="text-light">Team</a>
+                        <a href="#" class="text-light">Advert</a>
+                    </div>
+                    <div class="menu-item-right">
+                        <a href="#" class="text-light">Subscribe</a>
+                        <a href="#" class="text-light">Purchase Theme</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="header-section">
-            <button class="newsletter-btn">
-                <i class="fas fa-envelope"></i> NEWSLETTER
-            </button>
-            <img src="/images/logo-white.png" alt="Logo">
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-pinterest"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fas fa-search"></i></a>
+    <div class="header-section ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-between align-items-center">
+                    <div class="header-left">
+                        <button class="newsletter-btn">
+                            <i class="bi bi-envelope"></i> NEWSLETTER
+                        </button>
+                    </div>
+                    <div class="header-center">
+                        <img src="/images/logo-white.png" alt="Logo">
+
+                    </div>
+                    <div class="header-right">
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -67,7 +106,9 @@
                     <li class="nav-item"><a class="nav-links" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-links" href="#">Features</a></li>
                     <li class="nav-item"><a class="nav-links" href="#">Beauty</a></li>
-                    <li class="nav-item"><a class="nav-links" href="#">Celebrity <span class="badge">NEW</span></a></li>
+                    <li class="nav-item"><a class="nav-links" href="#">Celebrity <span
+                                class="badge-celeb">NEW</span></a>
+                    </li>
                     <li class="nav-item"><a class="nav-links" href="#">Contact Us</a></li>
                     <li class="nav-item"><a class="nav-links" href="#">About Us</a></li>
                 </ul>
@@ -79,38 +120,46 @@
         <div class="row ">
             <div class="col-md-3">
                 <div class="card mb-4">
-                    <img src="/images/image1.jpg" class="card-img-top " alt="...">
-                    <div class="category-label">Beauty</div>
+                    <div class="card-img-holder">
+                        <img src="/images/image1.jpg" class="card-img-top  position-relative" alt="...">
+                        <span class="badge text-bg-beauty">Beauty</span>
+                    </div>
                     <div class="card-body">
-                        <p class="card-text mt-4 "><i class="fa-regular fa-calendar"></i>March 25, 2019
-                        </p>
+                        <p class="card-text mt-4"><i class="bi bi-calendar"></i> March 25, 2019</p>
                         <h5 class="card-title">A First Look At Michael Kors's Charming New London Store</h5>
                     </div>
                 </div>
-                <div class="card mb-4">
-                    <img src="/images/image2.jpg" class="card-img-top" alt="...">
-                    <div class="category-label">Beauty</div>
+                <div class="card mb-4 ">
+                    <div class="card-img-holder">
+                        <img src="/images/image2.jpg" class="card-img-top position-relative" alt="...">
+                        <span class="badge text-bg-lifestyle">Lifestyle</span>
+                    </div>
                     <div class="card-body">
-                        <p class="card-text  mt-4"><i class="fa-regular fa-calendar"></i>March 25, 2019</p>
-                        <h5 class="card-title ">A First Look At Michael Kors's Charming New London Store</h5>
+                        <p class="card-text mt-4"><i class="bi bi-calendar"></i> March 25, 2019</p>
+                        <h5 class="card-title">A First Look At Michael Kors's Charming New London Store</h5>
                     </div>
                 </div>
             </div>
+
             <div class="col-md-6">
                 <div class="card mb-4">
-                    <img src="/images/image3.jpg" class="card-img-top" alt="...">
-                    <div class="category-label">Beauty</div>
+                    <div class="card-img-holder">
+                        <img src="/images/image3.jpg" class="card-img-top" alt="...">
+                        <span class="badge text-bg-beauty">Beauty</span>
+                    </div>
                     <div class="card-body">
-                        <p class="card-text  mt-4"><i class="fa-regular fa-calendar"></i>March 25, 2019</p>
+                        <p class="card-text  mt-4"><i class="bi bi-calendar"></i>March 25, 2019</p>
                         <h5 class="card-title">12 Affordable Online Boutiques Fashion Editors Are Obsessed With</h5>
                         <p class="card-description text-muted small ">Springis finally here—even though it doesn’t
                             really feel
                             like it,
                             with temperatures hovering
                             at just about freezing for
-                            much of the country. But, if the power of positive thinking works for mastering the problems
+                            much of the country. But, if the power of positive thinking works for mastering the
+                            problems
                             of everyday living, who
-                            says the power of positive decorating can’t do the same? Capes came to town several years
+                            says the power of positive decorating can’t do the same? Capes came to town several
+                            years
                             ago and then dwindled away
                             again, but if you…</p>
                     </div>
@@ -118,25 +167,28 @@
             </div>
             <div class="col-md-3">
                 <div class="card mb-4">
-                    <img src="/images/image4.jpg" class="card-img-top" alt="...">
-                    <div class="category-label">Lifestyle</div>
+                    <div class="card-img-holder">
+                        <img src="/images/image4.jpg" class="card-img-top" alt="...">
+                        <span class="badge text-bg-lifestyle">Lifestyle</span>
+                    </div>
                     <div class="card-body ">
-                        <p class="card-text  mt-4"><i class="fa-regular fa-calendar"></i>March 25, 2019</p>
+                        <p class="card-text  mt-4"><i class="bi bi-calendar"></i>March 25, 2019</p>
                         <h5 class="card-title">The 12 Definitive Trends Of Spring/Summer 2019</h5>
                     </div>
                 </div>
                 <div class="card mb-4">
-                    <img src="/images/image5.jpg" class="card-img-top" alt="...">
-                    <div class="category-label">Lifestyle</div>
+                    <div class="card-img-holder">
+                        <img src="/images/image5.jpg" class="card-img-top" alt="...">
+                        <span class="badge text-bg-beauty">Beauty</span>
+                    </div>
                     <div class="card-body">
-                        <p class="card-text  mt-4"><i class="fa-regular fa-calendar"></i>March 25, 2019</p>
+                        <p class="card-text  mt-4"><i class="bi bi-calendar"></i>March 25, 2019</p>
                         <h5 class="card-title">The 11 Definitive Accessories Trends Of Summer</h5>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

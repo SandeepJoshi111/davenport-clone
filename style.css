@@ -15,40 +15,94 @@ body {
 
 }
 
+
 .container {
     width: 1070px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
+
 .header-topline-wrapper {
     height: 38px;
     background: linear-gradient(to right, #cab09a 0%, #e58477 100%);
     font-family: 'Basic', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+    flex-shrink: 0;
+}
+
+.header-topline-title {
+    margin-left: 30px;
+    background: rgba(0, 0, 0, 0.2);
+    /* padding-left: 20px; */
+    padding: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+    flex-shrink: 0;
 }
 
 .header-menu {
     height: 38px;
     background: #121212;
-    font-size: 12px;
+    font-size: 11px;
     font-family: 'Basic', sans-serif !important;
-
+    text-transform: uppercase;
 }
 
-.header-section {
+.menu-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+}
+
+.menu-item-right {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: right;
+}
+
+.menu-item a,
+.menu-item-right a {
+    margin-right: 24px;
+    color: #fff; /* Ensure text color is light */
+    text-decoration: none; /* Optional: Remove underline from links */
+}
+
+/* Remove the margin-right for the last child to avoid extra space */
+.menu-item a:last-child,
+.menu-item-right a:last-child {
+    margin-right: 0;
+}
+
+.col-md-12 {
     margin-bottom: 0 !important;
     height: 105px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
+
 }
 
+.header-left{
+    text-align: left;
+    flex-shrink: 0;
+}
+.header-center{
+   text-align: center;
+    flex-grow: 1;
+    position: relative;
+}
+.header-right{
+   text-align: right;
+    flex-shrink: 0;
+}
 .header-section img {
     width: 230px;
 }
 
 .newsletter-btn {
-    padding: 10px 30px;
+    padding: 13px 30px;
     line-height: 1;
     background: #121212;
     border: 1px solid #121212;
@@ -62,11 +116,11 @@ body {
     letter-spacing: 1px;
     border-radius: 30px;
     outline: none !important;
+    transition: 0.4s ease-in-out;
 }
 
 .newsletter-btn:hover {
-    background-color: #fff;
-    color: #222;
+    background-color: #48494b;
 }
 
 .social-icons a {
@@ -84,6 +138,7 @@ body {
     text-transform: uppercase;
 }
 
+
 .nav-links {
     color: #f2f1f1;
     font-size: 13px;
@@ -99,24 +154,49 @@ body {
     position: relative;
     font-family: "Basic", sans-serif;
 }
-
+.badge-celeb{
+    border-radius: 30px;
+    font-size: 9px;
+    padding: 2px 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #ecada6;
+}
 .col-md-6 {
     padding: 0px 40px;
 }
 
 .card {
+    
     background-color: transparent;
 }
-
+.card-img-holder{
+position: relative; /* Ensure .card is relative for absolute positioning of the badge */
+}
 .card-img-top {
+    width: 100%;
     border-radius: 5px;
-    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
-.category-label {
+.badge {
     position: absolute;
-    left: 5;
-    background: #000;
+    bottom: 5px; /* Position 5px from the bottom */
+    left: 5px; /* Position 5px from the left */
+    border-radius: 30px;
+    font-size: 10px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.text-bg-lifestyle{
+    background-color: #a8b16a;
+}
+.text-bg-beauty{
+    background-color: #e19191;
 }
 
 .card-body {
@@ -127,6 +207,10 @@ body {
     color: #737171;
     font-family: "Basic", serif;
     margin-bottom: 0px;
+
+}
+.card-text i{
+    margin-right: 5px;
 
 }
 
