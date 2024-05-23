@@ -44,6 +44,15 @@ body {
     flex-shrink: 0;
 }
 
+.carousel-slide .carousel-inner .carousel-item a {
+    color: white;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-size :12px; ;
+      padding-left: 0; /* Remove default padding */
+      text-decoration: none;
+}
+
 .header-menu {
     height: 38px;
     background: #121212;
@@ -131,20 +140,19 @@ body {
 
 .navbar-nav {
     width: 100%;
-    padding: 12px 0;
+    padding: 5px 0;
     border-top: 2px solid #ffffff;
     border-bottom: 1px solid #2a2a2a;
     justify-content: center;
     text-transform: uppercase;
 }
 
-
 .nav-links {
     color: #f2f1f1;
     font-size: 13px;
     line-height: 18px;
     display: block;
-    padding: 8px 18px;
+    padding:12px 18px;
     margin-left: 0;
     margin-right: 0;
     text-decoration: none;
@@ -153,7 +161,17 @@ body {
     letter-spacing: 1px;
     position: relative;
     font-family: "Basic", sans-serif;
+    transition: border-bottom-color 0.3s; /* Add transition for smooth effect */
+    border-bottom: 1px solid transparent; /* Initial border bottom set to transparent */
 }
+
+.nav-links:hover {
+    border-bottom: 2px solid white; /* Show white border bottom on hover */
+    text-decoration: none; /* Remove text decoration on hover */
+    color: #f2f1f1;
+}
+
+
 .badge-celeb{
     border-radius: 30px;
     font-size: 9px;
@@ -207,15 +225,29 @@ position: relative; /* Ensure .card is relative for absolute positioning of the 
     color: #737171;
     font-family: "Basic", serif;
     margin-bottom: 0px;
+    font-size: 14px;
+    margin-bottom: 10px;
+
 
 }
 .card-text i{
     margin-right: 5px;
-
 }
 
 .card-title {
     font-family: "Cardo", serif;
     font-size: 20px;
     font-weight: bold;
+}
+
+.divider{
+    border: 1px solid #303030;
+}
+
+.share-icons{
+    font-size: 12px;
+}
+.share-icons i {
+    
+    margin-left: 10px; /* Adjust this value to increase or decrease the gap */
 }
