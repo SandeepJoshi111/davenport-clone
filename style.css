@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+body {
+    background-color: #191919;
+    color: #fff;
+
+}
+
+.container {
+    width: 1070px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header-topline-wrapper {
+    height: 38px;
+    background: linear-gradient(to right, #cab09a 0%, #e58477 100%);
+    font-family: 'Basic', sans-serif;
+}
+
+.header-menu {
+    height: 38px;
+    background: #121212;
+    font-size: 12px;
+    font-family: 'Basic', sans-serif !important;
+
+}
+
+.header-section {
+    margin-bottom: 0 !important;
+    height: 105px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-section img {
+    width: 230px;
+}
+
+.newsletter-btn {
+    padding: 10px 30px;
+    line-height: 1;
+    background: #121212;
+    border: 1px solid #121212;
+    color: #ffffff;
+    text-align: left;
+    vertical-align: middle;
+    cursor: pointer;
+    text-align: center;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    outline: none !important;
+}
+
+.newsletter-btn:hover {
+    background-color: #fff;
+    color: #222;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 5px;
+    font-size: 14px;
+}
+
+.navbar-nav {
+    width: 100%;
+    padding: 12px 0;
+    border-top: 2px solid #ffffff;
+    border-bottom: 1px solid #2a2a2a;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    color: #f2f1f1;
+    font-size: 13px;
+    line-height: 18px;
+    display: block;
+    padding: 8px 18px;
+    margin-left: 0;
+    margin-right: 0;
+    text-decoration: none;
+    background: transparent;
+    cursor: pointer;
+    letter-spacing: 1px;
+    position: relative;
+    font-family: "Basic", sans-serif;
+}
+
+.col-md-6 {
+    padding: 0px 40px;
+}
+
+.card {
+    background-color: transparent;
+}
+
+.card-img-top {
+    border-radius: 5px;
+    position: relative;
+}
+
+.category-label {
+    position: absolute;
+    left: 5;
+    background: #000;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.card-text {
+    color: #737171;
+    font-family: "Basic", serif;
+    margin-bottom: 0px;
+
+}
+
+.card-title {
+    font-family: "Cardo", serif;
+    font-size: 20px;
+    font-weight: bold;
+}
